@@ -54,7 +54,11 @@ ROOT_URLCONF = 'helloworld.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [],
+=======
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+>>>>>>> dbfc639cce0f305cb6b8c739e1110e5f2ca24dd6
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,6 +124,18 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
+<<<<<<< HEAD
+=======
+if DEBUG:
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static'),
+    ]
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+
+>>>>>>> dbfc639cce0f305cb6b8c739e1110e5f2ca24dd6
 
 STATIC_URL = '/static/'
 django_heroku.settings(locals())
