@@ -4,32 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Week2Example留言板</title>
+    <title>想说的都在这里面了</title>
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+    <style>
+        h2{
+            text-align: center;
+        }
+        #a{
+            text-align: center;
+            font-size:15px;
+            color: aquamarine;
+        }
+        p{
+            text-align: center;
+        }
+        #imp{
+            color: red;
+            font-size: 50px;
+        }
+    </style>
 </head>
 <body>
-    <h1>這是我自己的範例。</h1>
-    
-    <p id="ta">by pecu<br></p> 
-    <div id="container">
-        <div id="content">
-            {% for name in names %}
-            <div class="msg">
-                <span class="name">{{ name }}</span>
-                {{ fulltext }}
-            </div>
-            {% endfor %}
-        </div>
-        <div id="send-box">
-            <form>
-                <label for="user">賬號：</label><input type="text" id="user"> <br>
-                <label for="password">密碼：</label><input type="password" id="password"><br>
-                <input type="submit" value="提交">
-                <input type="reset" value="重置">
-            </form>
-            <span id='ps'>Ps:格子是假的，無法輸入ＸＤ</span>
-        </div>
-    </div>
+<h2>想不想知道我为啥会喜欢上你</h2>
+<p id="a"><a href="frist.html">想知道</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick=alert("好好好，听你的")>I don't care</a></p>
+<p>然后你昨天也跟我说清楚了啥的</p>
+<p>我也不会再打扰你了</p>
+<p>但是真的不会怨恨你的</p>
+<p>没想到我给你的压力好像很大的</p>
+<p>然后原来你也有了在意的人</p>
+<p>所以希望你脱单成功</p>
+<p id="imp">祝你幸福</p>
+<audio src="music.m4a" autoplay="autoplay"></audio>
 </body>
 
 </html>
