@@ -4,37 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>想说的都在这里面了</title>
+    <title>week3作業</title>
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
-    <style>
-        h2{
-            text-align: center;
-        }
-        #a{
-            text-align: center;
-            font-size:15px;
-            color: aquamarine;
-        }
-        p{
-            text-align: center;
-        }
-        #imp{
-            color: red;
-            font-size: 50px;
-        }
-    </style>
 </head>
 <body>
-<h2>想不想知道我为啥会喜欢上你</h2>
-<p id="a"><a href="frist.html">想知道</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick=alert("好好好，听你的")>I don't care</a></p>
-<p>然后你昨天也跟我说清楚了啥的</p>
-<p>我也不会再打扰你了</p>
-<p>但是真的不会怨恨你的</p>
-<p>没想到我给你的压力好像很大的</p>
-<p>然后原来你也有了在意的人</p>
-<p>所以希望你脱单成功</p>
-<p id="imp">祝你幸福</p>
-<audio src="music.m4a" autoplay="autoplay"></audio>
+    <h2>這是我自己的範例</h2>
+    <img src="https://picsum.photos/200/200?image=80">
+    <script>
+    function MouseOver(obj) {
+    obj.style.width="500px";
+}
+    function MouseOut(obj) {
+        obj.style.width="auto"
+    }
+        for(var i=0;i<20;i++)
+        {
+            var url="https://picsum.photos/200/200?image=";
+            var j=Math.ceil(Math.random()*500);
+            var image;
+            image="<img src="+url+String(j)+" onmouseover=MouseOver(this) onmouseout=MouseOut(this)>"
+            document.write(image);
+            if(i%5)
+                document.write("<br>")
+        }
+    </script>
 </body>
 
 </html>
